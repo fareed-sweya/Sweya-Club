@@ -1,0 +1,64 @@
+<div class="error_page">
+  <!--/login-top-->
+  <div class="error-top">
+    <h2 class="inner-tittle page">{{applicationName}}</h2>
+    <div class="login">
+      <h3 class="inner-tittle t-inner">Login</h3>
+      <!-- <div class="buttons login">
+        <ul>
+          <li><a href="#" class="hvr-sweep-to-right">Facebook</a></li>
+          <li class="lost">
+            <a href="#" class="hvr-sweep-to-left">Twitter</a>
+          </li>
+          <div class="clearfix"></div>
+        </ul>
+      </div> -->
+      <form>
+        <input
+          [(ngModel)]="email"
+          name="email"
+          type="text"
+          class="text"
+          placeholder="E-mail address"
+        />
+        <input
+          [(ngModel)]="password"
+          name="password"
+          type="password"
+          placeholder="Password"
+        />
+        <div class="submit">
+          <input type="button" (click)="login()" value="Login" />
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="new">
+          <p>
+            <label class="checkbox11"
+              ><input type="checkbox" name="checkbox" /><i> </i>Forgot Password
+              ?</label
+            >
+          </p>
+          <p class="sign">
+            Do not have an account ? <a [routerLink]="['/signup']">Sign Up</a>
+          </p>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--//login-top-->
+</div>
+
+<!--//login-->
+<!--footer section start-->
+<div class="footer">
+  <div class="error-btn">
+    <a class="read fourth" href="index.html">Return to Home</a>
+  </div>
+  <p>
+    &copy 2016 Augment . All Rights Reserved | Design by
+    <a href="https://w3layouts.com/" target="_blank">W3layouts.</a>
+  </p>
+</div>
